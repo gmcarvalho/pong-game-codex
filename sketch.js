@@ -22,8 +22,8 @@ function preload() {
 
 function setup() {
   createCanvas(800, 450);
-  leftPaddle = new Paddle(40, 87, 83, paddle1Img); // W and S keys
-  rightPaddle = new Paddle(width - 40, UP_ARROW, DOWN_ARROW, paddle2Img);
+  leftPaddle = new Paddle(40, 87, 83, paddle1Img, 'mouse'); // controlled by mouse
+  rightPaddle = new Paddle(width - 40, UP_ARROW, DOWN_ARROW, paddle2Img, 'ai');
   ball = new Ball(ballImg);
   textAlign(CENTER, CENTER);
   textSize(32);

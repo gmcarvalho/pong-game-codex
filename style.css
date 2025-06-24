@@ -5,9 +5,22 @@ body {
   color: #fff;
   font-family: sans-serif;
   overflow: hidden;
+  position: relative;
 }
 
 canvas {
   display: block;
   margin: 0 auto;
+}
+
+/* Restart button overlay styling */
+#restart-button {
+  position: absolute;
+  left: 50%;
+  top: calc(50% + 40px);
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 10;
 }

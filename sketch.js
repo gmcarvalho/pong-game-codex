@@ -31,7 +31,7 @@ function setup() {
   textAlign(CENTER, CENTER);
   textSize(32);
   restartButton = createButton('Reiniciar');
-  restartButton.position(width / 2 - 50, height / 2 + 20);
+  restartButton.id('restart-button');
   restartButton.mousePressed(restartGame);
   restartButton.hide();
 }
